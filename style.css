@@ -1,16 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Noto+Serif+TC:wght@200..900&display=swap');
+/*預設空白 5px */
+*{
+   padding: 5px;
+   margin: 5px;
+}
+
 body    {
    color:#422B22;
    background-color:#EAE9E6;
    font-size: 18px;
    font-family: "Chocolate Classical Sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+   font-weight: 300;
+   font-style: normal;
+
+   }
 header, footer{
    background-color: #EBECB2;
    color: black;
+   border-top: #f7d5b8 1px solid;
+   border-left: #cf925c 1px solid;
+   border-bottom: #3d2f22 4px solid;
+   border-right: #3d2f22 5px solid;
+   border-radius: 15px;
+   height: 110px;
+
 }
+
+header ul{
+   position: absolute;
+   top: 25px;
+   right: 35px;
+   line-height: 100px;
+}
+
+header H1{
+   position: absolute;
+   top: 25px;
+   left: 35px;
+   line-height: 100px;
+   background-image: url(images/logo.png);
+   background-size: 100px 100px;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 100px;
+   height: 100px;
+   text-indent: 103%;
+   white-space: nowrap;
+   font-size: 1.3rem;
+   }
+
+   header H2{
+      position: absolute;
+      top: 100px;
+      left: 170px;
+      font-family: "NOto Sans TC",sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+   }
+   
 header a{
    color: #422B22;
    text-decoration: none;
