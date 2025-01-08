@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="uikit.css"
+</head>
+<body>
+    <!--頁首-->
+    <header class="uk-background-muted uk-padding-small">
+        <div class="uk-container uk-flex uk-flex-middle uk-flex-between">
+            <!-- Logo 和網站名稱 -->
+            <div class="uk-flex uk-flex-middle">
+                <img src="photo/logo1.png" alt="網站 Logo" class="uk-margin-small-right uk-border-circle" width="90" height="90">
+                <div>
+                    <h1 class="uk-margin-remove uk-text-bold uk-text-primary">綠崗麵包工坊</h1>
+                    <p class="uk-margin-remove uk-text-meta">GreenHill Bakery</p>
+                </div>
+            </div>
+            <!-- RWD 選單 -->
+            <nav class="uk-navbar-container" uk-navbar>
+                <!-- 漢堡選單（行動版） -->
+                <div class="uk-hidden@m">
+                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">
+                        <span uk-navbar-toggle-icon></span>
+                    </button>
+                    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar">
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <ul class="uk-nav uk-nav-default">
+                                <li><a href="index.html">首頁</a></li>
+                                <li><a href="#">關於我們</a></li>
+                                <li><a href="product.html">產品列表</a></li>
+                                <li><a href="#">聯絡我們</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 電腦版選單 -->
+                <ul class="menu uk-navbar-nav uk-visible@m">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="product.html">產品列表</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--主內容 main-->
+    
+    <section class="product uk-container uk-section uk-section-muted">
+        <div class="uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="photo/banner.jfif" uk-img="loading: eager">
+            <h1>人氣精選 Popular Items</h1>
+        </div>
+        <div class="uk-child-width-1-2@s uk-child-width-2-5@m uk-child-width-1-4@l" uk-grid>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="photo/雞腿排蛋三明治.png" width="90%" height="90%" alt="" class="uk-border-circle">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3>雞腿排蛋三明治</h3>
+                        <p>雞腿排蛋三明治 是綠崗早午餐的人氣餐點，選用嚴選雞腿排，經碳烤處理後外酥內嫩，散發誘人香氣。搭配新鮮美生菜、牛番茄、黃瓜、滑順起司和濃郁福源花生醬，鹹甜交織，風味獨特。再夾入現煎雞蛋與鬆軟吐司，層次豐富、口感飽滿，是活力早晨的絕佳選擇！</p>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="photo/豬排蛋三明治.png" width="90%" height="90%" alt="" class="uk-border-circle">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3>豬排蛋三明治</h3>
+                        <p>豬排蛋三明治 是綠崗早午餐的經典招牌，選用國產豬製作的豬排，肉質鮮嫩多汁，經過碳烤後散發迷人香氣。夾入新鮮美生菜、牛番茄、黃瓜，搭配滑順的起司與醇厚的福源花生醬，風味鹹甜交融。再加入香煎蛋與輕脆吐司，打造出層次豐富、口感紮實的完美搭配。這款三明治美味十足，是滿足早餐或早午餐需求的最佳選擇。</p>
+                    </div>
+                </div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="photo/碳烤香腸蛋三明治.png" width="90%" height="90%" alt="" class="uk-border-circle">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3>碳烤香腸蛋三明治</h3>
+                            <p>碳烤雞腿排蛋三明治 是綠崗早午餐的招牌人氣餐點，選用嚴選雞腿排，經碳烤處理後香氣四溢、外酥內嫩，搭配新鮮美生菜、牛番茄、黃瓜與滑順的起司，並加入濃郁的福源花生醬，鹹甜交織，風味獨特。搭配蓬鬆的吐司與現煎蛋，層次分明且口感飽滿，讓每一口都能品嚐到豐富的美味，為您的一天注入滿滿活力。</p>
+                        </div>
+                    </div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="photo/香腸蛋三明治.jpg" width="90%" height="90%" alt="" class="uk-border-circle">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3>香腸蛋三明治</h3>
+                                <p>香腸蛋三明治 選用香氣四溢的國產香腸，經碳烤後外皮微酥、肉質彈嫩，散發濃郁的鹹香風味。搭配新鮮美生菜、牛番茄、黃瓜、滑順起司與濃郁的福源花生醬，口感鹹甜層次豐富。加上現煎雞蛋與鬆軟的吐司，每一口都帶來滿滿飽足感與美味，是您快速補充活力的絕佳早午餐選擇。</p>
+                            </div>
+                        </div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="photo/總匯三明治.jpg" width="90%" height="90%" alt="" class="uk-border-circle">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3>總匯三明治</h3>
+                                    <p>總匯三明治 是綠崗早午餐的豪華經典之選，以四片吐司夾入豐富配料，包括國產豬排、大火腿、培根、新鮮蔬菜、滑順起司與香煎雞蛋，再搭配招牌福源花生醬，鹹甜交織、層次豐富。每一口都能享受到滿滿的肉香與蔬菜的清爽，是份量十足、味蕾滿足的超值選擇，適合與家人朋友共享或滿足大食量需求！</p>
+                                </div>  
+                            </div>             
+        </div>
+    </section>
+    
+    <!-- 頁尾區段 -->
+    <footer class="uk-section uk-section-secondary uk-light">
+        <div class="uk-container">
+            <div class="uk-grid-match uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+                <!-- 第一欄：網站資訊 -->
+                <div>
+                    <h4 class="uk-text-bold">關於我們</h4>
+                    <p>綠崗麵包工坊秉持在地新鮮的理念，用心製作每一份麵包。</p>
+                </div>
+                <!-- 第二欄：聯絡方式 -->
+                <div>
+                    <h4 class="uk-text-bold">聯絡方式</h4>
+                    <ul class="uk-list">
+                        <li>地址：彰化縣綠崗路88號</li>
+                        <li>電話：04-12345678</li>
+                        <li>Email：info@greenhillbakery.tw</li>
+                    </ul>
+                </div>
+                <!-- 第三欄：快速連結 -->
+                <div>
+                    <h4 class="uk-text-bold">快速連結</h4>
+                    <ul class="uk-list">
+                        <li><a href="#">首頁</a></li>
+                        <li><a href="#">關於我們</a></li>
+                        <li><a href="#">產品列表</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <!-- 第四欄：社群媒體 -->
+                <div>
+                    <h4 class="uk-text-bold">追蹤我們</h4>
+                    <div class="uk-flex uk-flex-middle">
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                        <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
